@@ -15,6 +15,10 @@
     <p>From the data we can see that democrate and republicans mirrored each other in how they felt the president handeled his covid 19 response.</p>
     <p>With the averages we can say that republicans thought the president handled the reponse the best.</p>
     
-    <p><a href="secondpage.html">More</a></p>
+    <p>For this project I used data from https://data.fivethirtyeight.com/ which was one of the linked sources in the project home page.</p>
+    <p>The data was collected over a 6 month period in 2020. Many different sources are listed in the data.</p>
+    <p>To find the averages of the data I used a local mysql database, and loaded the provided .csv file into it. I then ran commands like</p>
+    <p>SELECT AVG(approve) FROM polls.covid_approval_polls WHERE party="d"; this command does is takes the approval percent from all polls</p>
+    <p>where democrats were the only ones polled. I then did the same for the democrat dissapproval rate, and then for republicans as well.
   </body>
 </html>
